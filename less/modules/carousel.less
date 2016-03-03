@@ -1,0 +1,86 @@
+// Dependencies
+// --------------------------------------------------
+@import "../components/ge-bootstrap/less/cdx-bootstrap.less";
+@import "../components/brandkit/less/variables.less";
+
+.mds-container.card-carousel {
+  .item {
+    .makeRow;
+    padding-left: 20px;
+  }
+  .card {
+    .makeColumn(1);
+    border: 1px solid @tableBorder;
+    min-height: 400px;
+    width: 272px;
+    margin-left: 30px;
+    td {
+      border: none;
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+    tr {
+      &:first-child td {
+        padding-top: 20px;
+        h4 {
+          display: inline;
+        }
+        p {
+          display: inline-block;
+          vertical-align: top;
+          width: 40%;
+          color: @black;
+          span:not(.label) {
+            color: @gray;
+          }
+        }
+      }
+      &:last-child td {
+        padding-top: 20px;
+        padding-bottom: 20px;
+      }
+    }
+  }
+}
+
+table p {
+  width: 100%;
+}
+
+/* temp table styles */
+
+// -- Carousel Controls
+
+.carousel .carousel-navigation {
+  bottom: 20px;
+  padding: 8px 10px;
+  background-color: rgba(255, 255, 255, 0.7);
+  li {
+    position: relative;
+    top: -9px;
+    a {
+      background-color: @gray;
+    }
+  }
+}
+
+
+.mds-container.notifications {
+  .carousel-inner .item {
+    margin-bottom: 60px;
+  }
+
+  .module.collapsible {
+    .span12 {
+      margin-left: 15px;
+    }
+    .module-header {
+      padding: 30px;
+      .module-arrow {
+        position: absolute;
+        left: 10px;
+        top: 30px;
+      }
+    }
+  }
+}

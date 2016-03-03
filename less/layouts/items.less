@@ -1,0 +1,120 @@
+// Dependencies
+// --------------------------------------------------
+@import "../components/ge-bootstrap/less/cdx-bootstrap.less";
+@import "../components/brandkit/less/variables.less";
+
+//-- items category
+
+.mds-container.item-category {
+  margin-top: 0px;
+  .text {
+    padding: @gridGutterWidth1200;
+    padding-right: 0;
+    h2 {
+      margin-bottom: 20px;
+    }
+    .align-wrapper { // using to break free of float restriction
+      display: table-cell;
+      vertical-align: bottom;
+    }
+    .align-bottom {
+      display: inline-block;
+      vertical-align: bottom;
+    }
+  }
+}
+
+
+.mds-container.filter {
+  margin-top: @gridGutterWidth1200;
+  margin-bottom: 1px;
+}
+.mds-container.items {
+  margin-top: 0;
+  margin-bottom: @gridGutterWidth1200;
+  ul, li {
+    list-style: none;
+    margin: 0;
+  }
+  .items {
+    header {
+      padding-bottom: @gridGutterWidth1200;
+      h3 {
+        font-weight: normal;
+      }
+    }
+    .item-list {
+      padding-top: @gridGutterWidth1200;
+      .item {
+        .clearfix;
+        padding-top: @gridGutterWidth1200;
+        padding-bottom: @gridGutterWidth1200;
+        border-top: 1px solid @grayLighter;
+        &:first-child {
+          border-top: none;
+          padding-top: 0;
+        }
+        .media {
+          margin-left: @gridGutterWidth1200;
+        }
+        .item-detail {
+          .clearfix;
+          > div {
+            margin-right: @gridGutterWidth1200;
+          }
+          .title {
+            display: inline-block;
+            font-size: @baseFontSize + 4;
+            margin-bottom: 20px;
+            color: @blue;
+            margin-bottom: 10px;
+          }
+          .item-desc {
+            .clearfix;
+            width: 100%;
+            .summary {
+              width: 70%;
+              display: block;
+              float: left;
+              margin-bottom: 20px;
+            }
+            .price {
+              width: 100px;
+              display: block;
+              float: right;
+              text-align: right;
+              .value {
+                display: block;
+                color: @black;
+                font-size: @baseFontSize + 2;
+              }
+              .value-desc {
+                color: @gray;
+              }
+            }
+          }
+          .actions {
+
+          }
+        }
+        a {
+          &:hover {
+            .title {
+              color: darken(@blue, 10%);
+            }
+            .summary {
+              color: darken(@textColor, 10%);
+              .source {
+                color: darken(@gray, 10%);
+              }
+            }
+          }
+          &:hover, &:active, &:focus {
+            text-decoration: none;
+            outline: 0;
+          }
+        }
+      }
+    }
+  }
+}

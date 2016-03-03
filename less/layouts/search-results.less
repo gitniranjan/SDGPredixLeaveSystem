@@ -1,0 +1,93 @@
+// Dependencies
+// --------------------------------------------------
+@import "../components/ge-bootstrap/less/cdx-bootstrap.less";
+@import "../components/brandkit/less/variables.less";
+
+.mds-container.search-results {
+  border-top: 1px solid @grayLightest;
+  margin-top: 0;
+  margin-bottom: @gridGutterWidth1200;
+  ul, li {
+    list-style: none;
+    margin: 0;
+  }
+  .refine {
+    li {
+      display: block;
+      width: 100%;
+      .clearfix;
+      margin-bottom: 10px;
+      .checkbox input[type="checkbox"] { 
+        margin: 3px 7px 0;
+      }
+    }
+  }
+  .results {
+    header {
+      padding-bottom: @gridGutterWidth1200;
+      h3 {
+        font-weight: normal;
+      }
+    }
+    .results-list {
+      padding-top: @gridGutterWidth;
+      border-top: 1px solid @grayLighter;
+      border-bottom: 1px solid @grayLighter;
+      h5 {
+        margin-bottom: 20px;
+      }
+      .result {
+        .clearfix;
+        a {
+          .media {
+            width: 168px;
+            margin-right: 20px;
+            margin-bottom: 30px;
+            float: left;
+          }
+          .label {
+            margin-right: 10px;
+          }
+          .title {
+            display: inline;
+            color: @blue;
+          }
+          .summary {
+            color: @textColor;
+            .source {
+              color: @gray;
+            }
+          }
+          &:hover {
+            .title {
+              color: darken(@blue, 10%);
+            }
+            .summary {
+              color: darken(@textColor, 10%);
+              .source {
+                color: darken(@gray, 10%);
+              }
+            }
+          }
+          &:hover, &:active, &:focus {
+            text-decoration: none;
+            outline: 0;
+          }
+        }
+      }
+    }
+    footer {
+      .pagination-block {
+        display: table-cell;
+        margin-top: 20px;
+        margin-bottom: 0px;
+        span, ul {
+          display: inline-block;
+          margin-left: 10px;
+          vertical-align: middle;
+          line-height: normal;
+        }
+      }
+    }
+  }
+}

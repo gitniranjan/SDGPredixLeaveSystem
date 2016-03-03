@@ -1,0 +1,49 @@
+.media h4
+{
+    color:#fff;
+    padding: 0px 30px;
+}
+
+.form-horizontal .controls, .form-horizontal input {
+    display: inline-block; 
+    width: 100%;
+    margin-bottom: 2px;
+}
+
+select, select.form-control {
+    background-color: #e9e9e9;
+    border: 1px solid #d4d4d4;
+    height: 28px;
+    margin-bottom: 0px;
+    vertical-align: middle;
+}
+
+label
+{
+    font-weight: 600;
+}
+
+.navbar.navbar-small .container .navbar-brand {
+    margin: 6px 0 0 -15px;
+    height: 70px;
+    color: #005cb9;
+}
+
+.navbar.navbar-small {
+    min-height: 80px;
+    background: #CECECE;
+    margin-bottom: 20px;
+}
+
+input[type="date"] {
+   height: 30px !important;
+}
+
+.inp-150
+{
+    height: 150px;
+}
+
+.block.feature {
+    min-height: 420px !important;
+}

@@ -1,0 +1,114 @@
+// Dependencies
+// --------------------------------------------------
+@import "../components/ge-bootstrap/less/cdx-bootstrap.less";
+@import "../components/brandkit/less/variables.less";
+
+//--- messaging
+
+.fill-container.messaging {
+  background-color: @white;
+  .container {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  a {
+    color: @textColor;
+    font-family: @brandFontFamily;
+    font-size: @baseFontSize + 22;
+    line-height: 1.2em;
+    i {
+      margin-top: -20px;
+      color: @linkColor;
+    }
+    &:hover {
+      color: @linkColor;
+    }
+  }
+}
+
+.fill-container.text-image-story {
+  padding: 0;
+  position: relative;
+  background-color: @offWhite;
+  &:nth-child(2n+1) {
+    background-color: @white;
+  }
+  [class*="span"] {
+    margin-bottom: 0;
+  }
+  .text {
+    padding: 0 1em 1em 0;
+    a {
+      color: @textColor;
+      i {
+        color: @linkColor;
+      }
+      &:hover {
+        color: @linkColor;
+      }
+    }
+    .align-wrapper { // using to break free of float restriction
+      display: table-cell;
+      vertical-align: bottom;
+    }
+    .align-bottom {
+      display: inline-block;
+      vertical-align: bottom;
+    }
+  }
+}
+
+.fill-container.video-player {
+  background-color: @white;
+  padding: 0;
+  img {
+    width: 100%;
+  }
+}
+
+.fill-container.news {
+  background-color: @grayLightest;
+  .signup {
+    .btn {
+      // margin-bottom:
+    }
+  }
+}
+
+.fill-container.header-carousel {
+  background-color: #669ed4;
+  position: relative;
+  padding-top: 0;
+  padding-bottom: 0;
+  .item {
+    // min-height: 250px;
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p {
+      color: @white;
+    }
+    a:hover {
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      p {
+        color: darken(@white, 10%);
+      }
+    }
+  }
+}
+
+.fill-container.photobar {
+  padding: 0;
+  img {
+    width: 25%;
+    margin: 0;
+  }
+}
